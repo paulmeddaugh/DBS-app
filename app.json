@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "discovery-bible-studies",
+    "name": "Discovery Bible Studies",
     "slug": "discovery-bible-studies",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,16 +15,28 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "net.iamsent.discoverybiblestudies"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.DOWNLOAD_WITHOUT_NOTIFICATION",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "63596626-059e-41f5-a469-bc7594137b87"
+      }
     }
   }
 }
